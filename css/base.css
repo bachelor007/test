@@ -1,0 +1,22 @@
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+div	{
+	height: 980px;
+	width: 100%;
+	
+}
+#a{
+	background-color: antiquewhite;
+}
+#b{
+	background-color: aqua;
+}
+#c{
+	background-color: aquamarine;
+}
+#d{
+	background-color: cadetblue;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div {
+				border: 1px solid black;
+				width: 200px;
+				height: 100px;
+				overflow: scroll;
+			}
+		</style>
+	</head>
+	<body>
+
+		<p>请试试 div 中的滚动条。</p>
+
+		<div onscroll="myFunction()">In my younger and more vulnerable years my father gave me some advice that I've
+			been turning over in my mind ever since.
+			<br><br>
+			'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world
+			haven't had the advantages that you've had.'
+		</div>
+
+		<p>Scrolled <span id="demo">0</span> times.</p>
+
+		<script>
+		window.onscroll = function() {
+		  //为了保证兼容性，这里取两个值，哪个有值取哪一个
+		  //scrollTop就是触发滚轮事件时滚轮的高度
+		  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		  console.log("滚动距离" + scrollTop);
+		}
+		</script>
+
+	</body>
+</html>
